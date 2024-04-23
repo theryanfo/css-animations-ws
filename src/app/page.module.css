@@ -31,16 +31,29 @@
   max-width: 800px;
 }
 
-/* Activity #2: Transforms
-  Rotate .hero_text 360 degrees on hover with a linear transition of 1 second
-  (hint: You'll need to add a pseudoselector to .hero_text and add the transition to the regular .hero_text class)
-*/
+/* Activity 3: Add a keyframe to slide in from the left and slowly reveal the
+  .hero_text message (hint: use opacity and transform) 
+*/ 
 
 .hero_text {
-  transition: transform linear 1s;
-  transition-delay: 0.5s;
+  opacity: 0; /* Initially hide the text */
+  animation: hero_animation 2.5s forwards;
 }
 
 .hero_text:hover {
   transform: rotate(360deg);
+}
+
+@keyframes hero_animation {
+  0% {
+    opacity: 0;
+    transform: translateX(-300%); /* Start off screen */
+  }
+  50% {
+    opacity: 0.5; /* Fade in halfway through animation */
+  }
+  100% {
+    opacity: 1; /* Fully visible */
+    transform: translateX(0); /* Slide in to original position */
+  }
 }
