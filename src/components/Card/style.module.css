@@ -9,17 +9,12 @@
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   /* Activity 2: Add your card transition here*/
-  transition: transform ease-in-out 0.3s;
 }
 
 /* Activity #2: Transforms
   Scale up the card by 105% on hover with a ease in-out transition of 0.3 seconds
   (hint: You'll need to add a pseudoselector to .card and add the transition to the regular .card class)
 */
-
-.card:hover {
-  transform: scale(1.05);
-}
 
 .card_img {
   width: 100%;
@@ -59,17 +54,3 @@
   and use margins to add spacing to right of the image
   (hint: https://developer.mozilla.org/en-US/docs/Web/CSS/url)
 */
-
-.card_button:hover {
-  font-size: 1.25rem;
-  opacity: 70%;
-}
-
-.card_button:active {
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-}
-
-.card_button::before {
-  content: url(/assets/raccoon.png);
-  margin-right: 4px;
-}
