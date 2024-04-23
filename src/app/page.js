@@ -37,6 +37,10 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <Navbar />
+      <div className={styles.hero}>
+        <h1 className={styles.hero_text}> Welcome to ACM Times</h1>
+        <img className={styles.hero_image} src="/assets/me2.png" />
+      </div>
       <h1 className={styles.section_header}>Workshops</h1>
       <div className={styles.news_cards}>
         {workshop_info.map((workshop, index) => (

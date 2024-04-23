@@ -14,3 +14,33 @@
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
 }
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero_image {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+}
+
+/* Activity #2: Transforms
+  Rotate .hero_text 360 degrees on hover with a linear transition of 1 second
+  (hint: You'll need to add a pseudoselector to .hero_text and add the transition to the regular .hero_text class)
+*/
+
+.hero_text {
+  transition: transform linear 1s;
+  transition-delay: 0.5s;
+}
+
+.hero_text:hover {
+  transform: rotate(360deg);
+}
