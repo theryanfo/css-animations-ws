@@ -36,6 +36,11 @@
   .hero_text message (hint: use opacity and transform) 
 */ 
 
-.hero_text {
+@keyframes slide_in {
+  0% {transform: translateX(-100%)}
+  100% {transform: translateX(0%)}
+}
 
+.hero_text {
+  animation: slide_in 1s;
 }
